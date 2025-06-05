@@ -1,13 +1,9 @@
-// let easy = document.getElementById("easy").textContent;
-// let medium = document.getElementById("medium").textContent;
-// let strong = document.getElementById("strong").textContent;
-
 function Generate() {
   let len = document.getElementById("passLen").value;
   let level = document.getElementById("level").value;
-  let easyPass = "asdfghjklzxcvbnmpoiuytrewq";
-  let mediumPass = "asdfghjklzxcvbnmpoiuytrewq1234567890";
-  let strongPass = "asdfghjklzxcvbnmpoiuytrewq1234567890!@#$%&*():;/+-?";
+  let easyPass = "asdfghjklzxcvbnmpoiuytrewqASDFGHJKLMNBVCXZQWERTYUIOP";
+  let mediumPass = "asdfghjklzxcvbnmpoiuytrewqASDFGHJKLMNBVCXZQWERTYUIOP1234567890";
+  let strongPass = "asdfghjklzxcvbnmpoiuytrewqASDFGHJKLMNBVCXZQWERTYUIOP1234567890!@#$%&*():;/+-?";
   let password = "";
 
   if (level == "easy") {
