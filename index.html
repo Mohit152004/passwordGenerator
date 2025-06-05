@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+      defer
+    ></script>
+    <title>Password Generator</title>
+  </head>
+  <style>
+    body {
+      background-image: url(./image/mountain.jpg);
+      background-size: cover;
+      background-blend-mode: darken;
+    }
+    .mainContainer {
+      margin-left: 30vw;
+      font-family: sans-serif;
+      height: auto;
+      width: 600px;
+    }
+    .titleContainer {
+      text-align: center;
+      margin-top: 23vh;
+    }
+    .optionSelector {
+      text-align: center;
+      margin-left: 22px;
+      margin-top: 50px;
+    }
+    .passLength {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .btnStyle {
+      margin-left: 15rem;
+      margin-top: 20px;
+      height: 30px;
+      width: 120px;
+      font-size: 20px;
+      background-color: #375f45;
+      border-radius: 10px;
+      color: white;
+      border: none;
+    }
+    .password {
+      height: auto;
+      width: 40%;
+      margin-left: 147px;
+      background-color: #1a2f28;
+      font-size: 20px;
+      color: white;
+    }
+    #passwordGeneration {
+      margin-top: 32px;
+    }
+    .passLength {
+      margin-right: 20px;
+    }
+  </style>
+  <body>
+    <div class="mainContainer">
+      <div class="titleContainer">
+        <h1 style="color: #375f45">
+          Password <span style="color: #1a2f28">Generator</span>
+        </h1>
+      </div>
+      <div class="optionSelector">
+        <label style="font-size: 22px; color: #375f45" for="password"
+          >Password Level:</label
+        >
+        <input type="text" id="level" />
+      </div>
+      <div class="passLength">
+        <label style="font-size: 20px; color: #375f45" for="fname"
+          >Pass Lenght:
+        </label>
+        <input type="text" id="passLen" />
+      </div>
+      <button class="btnStyle" onclick="Generate()">Generate</button>
+      <div class="password">
+        <p id="passwordGeneration"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
